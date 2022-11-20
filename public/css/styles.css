@@ -1,0 +1,301 @@
+@media (max-width: 720px){
+  .portada {
+    margin:  10% 30px;
+  }
+  .portada-div{
+    padding: 20%;
+    text-align: center;
+  }
+  .cover-text{
+    text-align: center;
+  }
+}
+/*******HEADER*******/
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar {
+    padding: 15px 10%;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #393E46;
+    color: #F2E7D5;
+}
+.navbar-nav a{
+color: #F2E7D5;
+}
+.navbar-nav a:hover {
+    color: #7D9D9C !important;
+    background-color: #474E68;
+}
+/*******BODY*******/
+body{
+  background-color: #EEEBDD;
+  margin-bottom: 0;
+}
+.portada-div{
+  color: #F2E7D5;
+  padding: 10%;
+  background-color: #393E46;
+  width: 100%;
+  margin:0;
+}
+.cover-text{
+  text-align: right;
+}
+.portada{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+.container{
+  padding: 15px 10%;
+}
+.coding-skills-div{
+margin: 0;
+padding:0;
+}
+.experience-icon{
+color: #7D9D9C;
+}
+.job-title{
+  text-align: center;
+}
+.iamge-card{
+  border-radius: 3%;
+  -webkit-filter: blur(2px);
+  padding: 1px;
+}
+.aling-txt{
+  background-color:  rgba(0,0,0,0.4);
+ font-weight: bold;
+ border: 3px solid #EEEBDD;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+ width: 80%;
+ padding: 20px;
+ text-align: center;
+ color:#EEEBDD;
+}
+.abilities-card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.30);
+}
+/*******FOOTER*******/
+.footer {
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	background-color: #393E46;
+  padding: 3% 15%;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #F2E7D5;
+}
+.ficons{
+  color: #F2E7D5;
+  padding: 0 20px;
+  font-size: 2rem;
+}
+.ficons:hover{
+  color: #7D9D9C;
+}
+.show-email {
+  display: none;
+}
+.mail:hover + .show-email {
+  display: block;
+  color: #F2E7D5;
+}
+
+
+/***** Skills Carousel *****/
+.visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0;
+
+}
+
+
+
+.container {
+  overflow: hidden;
+  padding: 30px;
+
+}
+
+.card-carousel {
+  --card-width: 80%;
+  --card-max-width: 280px;
+  --card-height: 350px;
+  --carousel-min-width: 600px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+}
+
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  background: #EEEBDD;
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 1em;
+  min-width: 250px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0,0,0,.5);
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 1em;
+  filter: brightness(.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.highlight {
+  filter: brightness(1)
+}
+
+
+.card:nth-of-type(1) .image-container {
+  background-image: url("/public/images\painting.png");
+}
+.card:nth-of-type(2) .image-container {
+  background-image: url("html.png")
+}
+.card:nth-of-type(3) .image-container {
+  background-image: url("public/images/js.png")
+}
+.card:nth-of-type(4) .image-container {
+  background-image: url("nodejs.png")
+}
+.card:nth-of-type(5) .image-container {
+  background-image: url("public/images/git.png")
+}
+.card:nth-of-type(6) .image-container {
+  background-image: url("public/images/github.png")
+}
+.card:nth-of-type(7) .image-container {
+  background-image: url("C:\Users\santh\Desktop\prueba 2\public\images\React_1.png");
+  width: 180px;
+  height: 150px;
+}
+
+
+
+.image-container {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-size: cover;
+  margin: 0 0 16px;
+
+}
+
+.image-container::after {
+  content: "";
+  z-index: 2;
+  display: block;
+  width: 120%;
+  height: 120%;
+
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+
+
+
+/******list Style******/
+.container{
+  padding: 30px;
+}
+
+.align {
+  padding-left:  32px;
+}
+
+/* ===== Career ===== */
+
+.filter-result .job-box {
+  -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.4);
+          box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.4);
+  border-radius: 10px;
+  padding: 10px 35px;
+}
+ul {
+  list-style: none;
+}
+.job-box .img-holder {
+  height: 65px;
+  width: 65px;
+  background-color: #7D9D9C;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(125, 157, 156, 0.9)), to(#393E46));
+  background-image: linear-gradient(to top, rgba(87, 111, 114, 1) 0%, #7D9D9C 100%);
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 65px;
+}
+.job-content ul li {
+  font-weight: 600;
+  opacity: 0.75;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+}
+@media (min-width: 768px) {
+  .job-content ul li {
+    border-bottom: 0;
+    padding: 0;
+  }
+}
+
+.job-content ul li i {
+  font-size: 20px;
+  position: relative;
+  top: 1px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
