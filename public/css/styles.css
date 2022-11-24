@@ -1,14 +1,10 @@
-@media (max-width: 720px){
-  .portada {
+@media (max-width: 995px){
+   .portada {
     margin:  10% 30px;
   }
   .portada-div{
     padding: 20%;
     text-align: center;
-  }
-  .cover-text{
-    text-align: center;
-    position: absolute;
   }
 }
 /*******HEADER*******/
@@ -46,7 +42,7 @@ body{
   margin:0;
 }
 .cover-text{
-  text-align: right;
+  text-align: center;
 }
 .portada{
   width: 300px;
